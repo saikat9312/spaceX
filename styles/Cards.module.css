@@ -1,0 +1,89 @@
+
+
+@media (max-width: 700px) {
+    .card {
+        background: white;
+        margin: 1rem;
+        min-width: 95%;
+        flex-basis: 45%;
+        padding: 1rem;
+        text-align: left;
+        color: inherit;
+        text-decoration: none;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .img{
+        width: 100%; 
+    }
+    .title{
+        color: #0909a9
+    }
+    .cardItemContainer{
+        background: white;
+    }
+    .cardItemRow{
+        margin: 5px 0px;
+        padding: 5px;
+        background: white;
+    }
+}  
+@media (min-width: 700px) and (max-width: 1024px) {
+    .card {
+        background: white;
+        max-width: 30%;
+        margin: 1rem;
+        flex-basis: 45%;
+        padding: 1rem;
+        text-align: left;
+        color: inherit;
+        text-decoration: none;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .img{
+        width: 100%; 
+    }
+    .title{
+        color: #0909a9
+    }
+    .cardItemContainer{
+        background: white;
+    }
+    .cardItemRow{
+        margin: 5px 0px;
+        padding: 5px;
+        background: white;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .card {
+        background: white;
+        max-width: 20%;
+        margin: 1rem;
+        flex-basis: 45%;
+        padding: 1rem;
+        text-align: left;
+        color: inherit;
+        text-decoration: none;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .img{
+        width: 100%; 
+    }
+    .title{
+        color: #0909a9
+    }
+    .cardItemContainer{
+        background: white;
+    }
+    .cardItemRow{
+        margin: 5px 0px;
+        padding: 5px;
+        background: white;
+    }
+}

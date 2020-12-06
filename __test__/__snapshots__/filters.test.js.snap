@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing App shows "Filters" 1`] = `
+<div
+  className="filterContainer"
+>
+  <h4>
+    Filters
+  </h4>
+  <div
+    className="filterItems"
+  >
+    Launch Year 
+    <hr />
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2006
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2007
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2008
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2009
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2010
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2011
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2012
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2013
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2014
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2015
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2016
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2017
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2018
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2019
+    </button>
+    <button
+      className="filterButton"
+      onClick={[Function]}
+    >
+      2020
+    </button>
+  </div>
+  <br />
+  <div
+    className="filterItems"
+  >
+    Successful Launch 
+    <hr />
+    <div
+      className="filterItems"
+    >
+      <button
+        className="filterButton"
+        onClick={[Function]}
+      >
+        True
+      </button>
+      <button
+        className="filterButton"
+        onClick={[Function]}
+      >
+        False
+      </button>
+    </div>
+  </div>
+  <br />
+  <div
+    className="filterItems"
+  >
+    Successful Landing 
+    <hr />
+    <div
+      className="filterItems"
+    >
+      <button
+        className="filterButton"
+        onClick={[Function]}
+      >
+        True
+      </button>
+      <button
+        className="filterButton"
+        onClick={[Function]}
+      >
+        False
+      </button>
+    </div>
+  </div>
+</div>
+`;
