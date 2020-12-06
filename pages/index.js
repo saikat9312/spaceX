@@ -45,7 +45,7 @@ export default function Home(props) {
         </div>
 
       </div>
-
+      
     </Layout>
   )
 }

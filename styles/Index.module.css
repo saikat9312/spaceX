@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.footer{
+  margin: 15px 20px 30px;
+}
+
 @media (max-width: 700px) {
   .title{
     font-size: 1.5rem;

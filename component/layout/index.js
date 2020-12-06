@@ -15,7 +15,7 @@ export default function Layout(props) {
         {props.children}
       </main>
 
-      <footer >
+      <footer className={styles.footer}>
         Developed by{' '} Saikat Bhattacharya
       </footer>
     </div>
