@@ -1,8 +1,17 @@
+/* .ant-radio-button-wrapper{
+    background: #98dc98;
+    margin: 5px !important;
+} */
+/* .ant-radio-button .ant-radio-button-checked, .ant-radio-button-wrapper .ant-radio-button-wrapper-checked{
+    background: #2dbb0a;
+    border-color: #2dbb0a !important;
+    color: red;
+} */
+
 @media (max-width: 700px) {
   .filterContainer {
     background: white;
     width: 100%;
-    /* margin: 1rem; */
     flex-basis: 45%;
     padding: 15px;
     text-align: left;
@@ -28,8 +37,7 @@
 @media (min-width: 700px) and (max-width: 1024px) {
     .filterContainer {
         background: white;
-        width: 100%;
-        /* margin: 1rem; */
+        max-width: 235px;
         flex-basis: 45%;
         padding: 10px;
         text-align: left;
@@ -55,10 +63,8 @@
 @media (min-width: 1024px) and (max-width: 1440px) {
     .filterContainer {
         background: white;
-        width: 100%;
-        /* margin: 1rem; */
-        flex-basis: 45%;
-        padding: 15px;
+        max-width: 235px;
+        padding: 14px;
         text-align: left;
         color: inherit;
         text-decoration: none;

@@ -1,6 +1,8 @@
 import React from 'react'
 import { CONSTANT } from '../../config'
+import 'antd/dist/antd.css';
 import styles from '../../styles/Filters.module.css'
+import { Radio } from 'antd';
 
 export default function Filters(props) {
     const [selectedYear, setSelectedYear] = React.useState("")
@@ -8,13 +10,13 @@ export default function Filters(props) {
     const [successfulLanding, setSuccessfulLanding] = React.useState("")
 
     const handleYear = (e) => {
-        setSelectedYear(e.target.innerText)
+        setSelectedYear(e.target.value)
     }
     const handleLaunchSucess = (e) => {
-        setSuccessfulLaunch(e.target.innerText)
+        setSuccessfulLaunch(e.target.value)
     }
     const handleLandingSucess = (e) => {
-        setSuccessfulLanding(e.target.innerText)
+        setSuccessfulLanding(e.target.value)
     }
 
     React.useEffect(() => {
@@ -26,22 +28,29 @@ export default function Filters(props) {
             <h4>Filters</h4>
             <div className={styles.filterItems}>
                 Launch Year <hr />
-                {
-                    CONSTANT.LAUNCH_YEAR.map(i => (<button className={styles.filterButton} key={i} onClick={(e) => handleYear(e)}>{i}</button>))
-                }
+                <Radio.Group buttonStyle="solid">
+                    {
+                        CONSTANT.LAUNCH_YEAR.map(i => (<Radio.Button className={styles.filterButton} value={i} key={i} onClick={(e) => handleYear(e)}><span style={{ color: 'black' }}>{i}</span></Radio.Button>))
+                    }
+                </Radio.Group>
+
             </div><br />
             <div className={styles.filterItems}>
                 Successful Launch <hr />
                 <div className={styles.filterItems}>
-                    <button className={styles.filterButton} onClick={(e) => handleLaunchSucess(e)}>True</button>
-                    <button className={styles.filterButton} onClick={(e) => handleLaunchSucess(e)}>False</button>
+                    <Radio.Group buttonStyle="solid">
+                        <Radio.Button value={true} className={styles.filterButton} onClick={(e) => handleLaunchSucess(e)}><span style={{ color: 'black' }}>True</span></Radio.Button>
+                        <Radio.Button value={false} className={styles.filterButton} onClick={(e) => handleLaunchSucess(e)}><span style={{ color: 'black' }}>False</span></Radio.Button>
+                    </Radio.Group>
                 </div>
             </div><br />
             <div className={styles.filterItems}>
                 Successful Landing <hr />
                 <div className={styles.filterItems}>
-                    <button className={styles.filterButton} onClick={(e) => handleLandingSucess(e)}>True</button>
-                    <button className={styles.filterButton} onClick={(e) => handleLandingSucess(e)}>False</button>
+                    <Radio.Group buttonStyle="solid">
+                        <Radio.Button value={true} className={styles.filterButton} onClick={(e) => handleLandingSucess(e)}>True</Radio.Button>
+                        <Radio.Button value={false} className={styles.filterButton} onClick={(e) => handleLandingSucess(e)}>False</Radio.Button>
+                    </Radio.Group>
                 </div>
             </div>
 

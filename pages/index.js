@@ -1,25 +1,32 @@
 import React from 'react'
+import { useRouter } from 'next/router'
+import dynamic from 'next/dynamic'
 import Layout from '../component/layout/index'
-import Card from '../component/card/index'
+//import CardItemList from '../component/cardItemList/index'
 import Filters from '../component/filters/index'
 import axios from 'axios'
 import styles from '../styles/Index.module.css'
 import { CONSTANT } from '../config'
 
+const DynamicComponent = dynamic(() => import('../component/cardItemList/index'))
 export default function Home(props) {
 
   const [resData, setResData] = React.useState([])
   const [selectedYear, setSelectedYear] = React.useState("")
   const [successfulLaunch, setSuccessfulLaunch] = React.useState("")
   const [successfulLanding, setSuccessfulLanding] = React.useState("")
+  const router = useRouter()
 
-  React.useEffect(() => {
-    setResData(props.data)
-  }, [props.data])
+  // React.useEffect(() => {
+  //   setResData(props.data)
+  // }, [props.data])
 
   React.useEffect(async () => {
     const { data } = await axios.get(`${CONSTANT.BASE_URL}?&launch_success=${successfulLaunch}&land_success=${successfulLanding}&launch_year=${selectedYear}`)
     setResData(data)
+
+    // Always do navigations after the first render
+    router.push(`/?limit=100&launch_success=${successfulLaunch}&land_success=${successfulLanding}&launch_year=${selectedYear}`, undefined, { shalow: true })
 
   }, [selectedYear, successfulLaunch, successfulLanding])
 
@@ -32,24 +39,21 @@ export default function Home(props) {
 
   return (
     <Layout>
-      <div className={styles.mainContent}> 
+      <div className={styles.mainContent}>
 
         <div className={styles.sidenavFilter}>
           <Filters applyFilter={applyFilter} />
         </div>
 
-        <div className={styles.grid}>
-          {
-            resData && resData.map(item => <Card key={item.flight_number} itemData={item} />)
-          }
-        </div>
+        <DynamicComponent data={resData}/>
 
       </div>
-      
+
     </Layout>
   )
 }
 
+// This gets called at build time
 export async function getStaticProps(context) {
   const { data } = await axios.get(CONSTANT.BASE_URL)
   if (!data) {
@@ -57,5 +61,8 @@ export async function getStaticProps(context) {
       notFound: true,
     }
   }
-  return { props: { data } } // will be passed to the page component as props
+  return {
+    props: { data },
+    revalidate: 1
+  } // will be passed to the page component as props
 }

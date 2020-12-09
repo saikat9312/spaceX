@@ -10,9 +10,9 @@ app.prepare().then(() => {
     server.get('*', (req, res)=>{
         return handle(req, res)
     })
-    server.listen(process.env.PORT || 3000, err => {
+    server.listen(process.env.PORT || 3001, err => {
         if(err) throw err
-        console.log("server ready on port: 3000");
+        console.log("server ready on port: 3001");
     })
 }).catch(ex=>{
     console.error(ex.stack)
