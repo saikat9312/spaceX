@@ -12,96 +12,550 @@ exports[`With Snapshot Testing App shows "Filters" 1`] = `
   >
     Launch Year 
     <hr />
-    <button
-      className="filterButton"
-      onClick={[Function]}
+    <div
+      className="ant-radio-group ant-radio-group-solid"
     >
-      2006
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2007
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2008
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2009
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2010
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2011
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2012
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2013
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2014
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2015
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2016
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2017
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2018
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2019
-    </button>
-    <button
-      className="filterButton"
-      onClick={[Function]}
-    >
-      2020
-    </button>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2006}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2006
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2007}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2007
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2008}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2008
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2009}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2009
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2010}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2010
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2011}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2011
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2012}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2012
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2013}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2013
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2014}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2014
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2015}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2015
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2016}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2016
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2017}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2017
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2018}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2018
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2019}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2019
+          </span>
+        </span>
+      </label>
+      <label
+        className="ant-radio-button-wrapper filterButton"
+      >
+        <span
+          className="ant-radio-button"
+          style={Object {}}
+        >
+          <input
+            checked={false}
+            className="ant-radio-button-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            type="radio"
+            value={2020}
+          />
+          <span
+            className="ant-radio-button-inner"
+          />
+        </span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "black",
+              }
+            }
+          >
+            2020
+          </span>
+        </span>
+      </label>
+    </div>
   </div>
   <br />
   <div
@@ -112,18 +566,82 @@ exports[`With Snapshot Testing App shows "Filters" 1`] = `
     <div
       className="filterItems"
     >
-      <button
-        className="filterButton"
-        onClick={[Function]}
+      <div
+        className="ant-radio-group ant-radio-group-solid"
       >
-        True
-      </button>
-      <button
-        className="filterButton"
-        onClick={[Function]}
-      >
-        False
-      </button>
+        <label
+          className="ant-radio-button-wrapper filterButton"
+        >
+          <span
+            className="ant-radio-button"
+            style={Object {}}
+          >
+            <input
+              checked={false}
+              className="ant-radio-button-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+              type="radio"
+              value={true}
+            />
+            <span
+              className="ant-radio-button-inner"
+            />
+          </span>
+          <span>
+            <span
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
+            >
+              True
+            </span>
+          </span>
+        </label>
+        <label
+          className="ant-radio-button-wrapper filterButton"
+        >
+          <span
+            className="ant-radio-button"
+            style={Object {}}
+          >
+            <input
+              checked={false}
+              className="ant-radio-button-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+              type="radio"
+              value={false}
+            />
+            <span
+              className="ant-radio-button-inner"
+            />
+          </span>
+          <span>
+            <span
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
+            >
+              False
+            </span>
+          </span>
+        </label>
+      </div>
     </div>
   </div>
   <br />
@@ -135,18 +653,66 @@ exports[`With Snapshot Testing App shows "Filters" 1`] = `
     <div
       className="filterItems"
     >
-      <button
-        className="filterButton"
-        onClick={[Function]}
+      <div
+        className="ant-radio-group ant-radio-group-solid"
       >
-        True
-      </button>
-      <button
-        className="filterButton"
-        onClick={[Function]}
-      >
-        False
-      </button>
+        <label
+          className="ant-radio-button-wrapper filterButton"
+        >
+          <span
+            className="ant-radio-button"
+            style={Object {}}
+          >
+            <input
+              checked={false}
+              className="ant-radio-button-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+              type="radio"
+              value={true}
+            />
+            <span
+              className="ant-radio-button-inner"
+            />
+          </span>
+          <span>
+            True
+          </span>
+        </label>
+        <label
+          className="ant-radio-button-wrapper filterButton"
+        >
+          <span
+            className="ant-radio-button"
+            style={Object {}}
+          >
+            <input
+              checked={false}
+              className="ant-radio-button-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+              type="radio"
+              value={false}
+            />
+            <span
+              className="ant-radio-button-inner"
+            />
+          </span>
+          <span>
+            False
+          </span>
+        </label>
+      </div>
     </div>
   </div>
 </div>
