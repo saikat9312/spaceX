@@ -45,7 +45,10 @@ export default function Home(props) {
           <Filters applyFilter={applyFilter} />
         </div>
 
-        <DynamicComponent data={resData}/>
+        {
+          resData.length ? <DynamicComponent data={resData} /> : <div style={{ fontSize: 30, alignItems: 'center', marginLeft: '30%', color: '#8d8da7' }}>No data found</div>
+        }
+
 
       </div>
 
