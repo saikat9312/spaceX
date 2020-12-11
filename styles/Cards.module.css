@@ -1,22 +1,20 @@
 @media (max-width: 700px) {
     .card {
         background: white;
-        margin: 0% 4% 5%;
-        min-width: 92%;
-        flex-basis: 45%;
-        padding: 1rem;
+        min-width: 100%;
+        padding: 3%;
+        margin: 0 0 5% 0;
         text-align: left;
         color: inherit;
         text-decoration: none;
         border: 1px solid #eaeaea;
         border-radius: 10px;
         transition: color 0.15s ease, border-color 0.15s ease;
+        box-shadow: 4px 4px 10px 2px #9a9a9a;    
     }
     .img{
         width: 100%; 
-        height: 60%;
         min-width: 100%;
-        min-height: 60%;
         background: #eee;
     }
     .title{
@@ -30,11 +28,11 @@
         background: white;
     }
 }  
-@media (min-width: 700px) and (max-width: 1024px) {
+@media (min-width: 701px) and (max-width: 1024px) {
     .card {
         background: white;
         max-width: 45%;
-        max-height: 85%;
+        max-height: 70%;
         margin: 0 15px 15px 0;
         flex-basis: 45%;
         padding: 1rem;
@@ -44,12 +42,11 @@
         border: 1px solid #eaeaea;
         border-radius: 10px;
         transition: color 0.15s ease, border-color 0.15s ease;
+        box-shadow: 4px 4px 10px 2px #9a9a9a;
     }
     .img{
         width: 100%; 
-        height: 60%;
         min-width: 100%;
-        min-height: 60%;
         background: #eee;
     }
     .title{
@@ -63,13 +60,12 @@
         background: white;
     }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .card {
         background: white;
-        max-width: 23%;
-        max-height: 55%;
+        width: 23%;
+        max-height: 65%;
         margin: 0 15px 15px 0;
-        flex-basis: 45%;
         padding: 1rem;
         text-align: left;
         color: inherit;
@@ -77,12 +73,11 @@
         border: 1px solid #eaeaea;
         border-radius: 10px;
         transition: color 0.15s ease, border-color 0.15s ease;
+        box-shadow: 4px 4px 10px 2px #9a9a9a;
     }
     .img{
         width: 100%;
-        height: 50%;
         min-width: 100%;
-        min-height: 50%;
         background: #eee; 
     }
     .title{

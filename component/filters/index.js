@@ -10,13 +10,13 @@ export default function Filters(props) {
     const [successfulLanding, setSuccessfulLanding] = React.useState("")
 
     const handleYear = (e) => {
-        setSelectedYear(e.target.value)
+        setSelectedYear(e.target.innerText)
     }
     const handleLaunchSucess = (e) => {
-        setSuccessfulLaunch(e.target.value)
+        setSuccessfulLaunch(e.target.innerText.toLowerCase())
     }
     const handleLandingSucess = (e) => {
-        setSuccessfulLanding(e.target.value)
+        setSuccessfulLanding(e.target.innerText.toLowerCase())
     }
 
     React.useEffect(() => {
@@ -25,35 +25,27 @@ export default function Filters(props) {
 
     return (
         <div className={styles.filterContainer}>
-            <h4>Filters</h4>
+            <h3>Filters</h3>
+            <div className={styles.filterItems} >
+                <div className={styles.filterTitle}>Launch Year</div>
+                {
+                    CONSTANT.LAUNCH_YEAR.map(i => (<button className={styles.filterButton} style={{ background: i == parseInt(selectedYear) ? '#38a02c' : '#b4ffa2' }} key={i} onClick={(e) => handleYear(e)}>{i}</button>))
+                }
+            </div>
             <div className={styles.filterItems}>
-                Launch Year <hr />
-                <Radio.Group buttonStyle="solid">
-                    {
-                        CONSTANT.LAUNCH_YEAR.map(i => (<Radio.Button className={styles.filterButton} value={i} key={i} onClick={(e) => handleYear(e)}><span style={{ color: 'black' }}>{i}</span></Radio.Button>))
-                    }
-                </Radio.Group>
-
-            </div><br />
-            <div className={styles.filterItems}>
-                Successful Launch <hr />
+            <div className={styles.filterTitle}>Successful Launch</div>
                 <div className={styles.filterItems}>
-                    <Radio.Group buttonStyle="solid">
-                        <Radio.Button value={true} className={styles.filterButton} onClick={(e) => handleLaunchSucess(e)}><span style={{ color: 'black' }}>True</span></Radio.Button>
-                        <Radio.Button value={false} className={styles.filterButton} onClick={(e) => handleLaunchSucess(e)}><span style={{ color: 'black' }}>False</span></Radio.Button>
-                    </Radio.Group>
-                </div>
-            </div><br />
-            <div className={styles.filterItems}>
-                Successful Landing <hr />
-                <div className={styles.filterItems}>
-                    <Radio.Group buttonStyle="solid">
-                        <Radio.Button value={true} className={styles.filterButton} onClick={(e) => handleLandingSucess(e)}>True</Radio.Button>
-                        <Radio.Button value={false} className={styles.filterButton} onClick={(e) => handleLandingSucess(e)}>False</Radio.Button>
-                    </Radio.Group>
+                    <button className={styles.filterButton} style={{ background: successfulLaunch == "true" ? '#38a02c' : '#b4ffa2' }} onClick={(e) => handleLaunchSucess(e)}>True</button>
+                    <button className={styles.filterButton} style={{ background: successfulLaunch == "false" ? '#38a02c' : '#b4ffa2' }} onClick={(e) => handleLaunchSucess(e)}>False</button>
                 </div>
             </div>
-
+            <div className={styles.filterItems}>
+            <div className={styles.filterTitle}>Successful Landing</div>
+                <div className={styles.filterItems}>
+                    <button className={styles.filterButton} style={{ background: successfulLanding == "true" ? '#38a02c' : '#b4ffa2' }} onClick={(e) => handleLandingSucess(e)}>True</button>
+                    <button className={styles.filterButton} style={{ background: successfulLanding == "false" ? '#38a02c' : '#b4ffa2' }} onClick={(e) => handleLandingSucess(e)}>False</button>
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,7 +1,6 @@
 .container {
   min-height: 100vh;
   max-width: 1440px;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,13 +31,15 @@
     flex-direction: column;
   }
   .sidenavFilter{
-    padding: 0px 15px;
-    margin: 0 0 15px 0 ;
+    margin: 3%;
+  }
+  .grid{
+    margin: 3%;
   }
   
 }
   
-@media (min-width: 700px) and (max-width: 1024px) {
+@media (min-width: 701px) and (max-width: 1024px) {
   .sidenavFilter{
     width: 30%;
     padding: 0px 15px;
@@ -49,10 +50,11 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   .sidenavFilter{
     width: 20%;
     padding: 0px 15px;
+    margin: 0 0 15px 0;
   }
   .grid{
     width: 80%;

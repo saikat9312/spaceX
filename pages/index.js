@@ -9,24 +9,24 @@ import styles from '../styles/Index.module.css'
 import { CONSTANT } from '../config'
 
 const DynamicComponent = dynamic(() => import('../component/cardItemList/index'))
-export default function Home(props) {
 
+export default function Home(props) {
+  const [isSSR, setIsSSR] = React.useState(true)
   const [resData, setResData] = React.useState([])
   const [selectedYear, setSelectedYear] = React.useState("")
   const [successfulLaunch, setSuccessfulLaunch] = React.useState("")
   const [successfulLanding, setSuccessfulLanding] = React.useState("")
+
   const router = useRouter()
 
-  // React.useEffect(() => {
-  //   setResData(props.data)
-  // }, [props.data])
-
   React.useEffect(async () => {
-    const { data } = await axios.get(`${CONSTANT.BASE_URL}?&launch_success=${successfulLaunch}&land_success=${successfulLanding}&launch_year=${selectedYear}`)
-    setResData(data)
-
-    // Always do navigations after the first render
+    // Shallow routing
     router.push(`/?limit=100&launch_success=${successfulLaunch}&land_success=${successfulLanding}&launch_year=${selectedYear}`, undefined, { shalow: true })
+
+    const { data } = await axios.get(`${CONSTANT.BASE_URL}?&launch_success=${successfulLaunch}&land_success=${successfulLanding}&launch_year=${selectedYear}`)
+
+    setResData(data)
+    setIsSSR(false)
 
   }, [selectedYear, successfulLaunch, successfulLanding])
 
@@ -36,7 +36,6 @@ export default function Home(props) {
     setSuccessfulLaunch(successfulLaunch)
     setSuccessfulLanding(successfulLanding)
   }
-
   return (
     <Layout>
       <div className={styles.mainContent}>
@@ -46,9 +45,8 @@ export default function Home(props) {
         </div>
 
         {
-          resData.length ? <DynamicComponent data={resData} /> : <div style={{ fontSize: 30, alignItems: 'center', marginLeft: '30%', color: '#8d8da7' }}>No data found</div>
+          isSSR ? (<DynamicComponent data={props.data} />) : (resData.length ? <DynamicComponent data={resData} /> : <div style={{ fontSize: 30, alignItems: 'center', marginLeft: '30%', color: '#8d8da7' }}>No data found</div>)
         }
-
 
       </div>
 
@@ -56,8 +54,8 @@ export default function Home(props) {
   )
 }
 
-// This gets called at build time
-export async function getStaticProps(context) {
+//This gets called at build time
+export async function getStaticProps() {
   const { data } = await axios.get(CONSTANT.BASE_URL)
   if (!data) {
     return {
