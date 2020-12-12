@@ -8,7 +8,7 @@ describe("Filter title", () => {
     it('App shows "Filters"', () => {
         const app = shallow(<App />);
 
-        expect(app.find("h4").text()).toEqual("Filters");
+        expect(app.find("h3").text()).toEqual("Filters");
     });
 });
 

@@ -9,6 +9,10 @@ export default function Filters(props) {
     const [successfulLaunch, setSuccessfulLaunch] = React.useState("")
     const [successfulLanding, setSuccessfulLanding] = React.useState("")
 
+    React.useEffect(() => {
+        props.applyFilter(selectedYear, successfulLaunch, successfulLanding)
+    }, [selectedYear, successfulLaunch, successfulLanding])
+
     const handleYear = (e) => {
         setSelectedYear(e.target.innerText)
     }
@@ -18,10 +22,6 @@ export default function Filters(props) {
     const handleLandingSucess = (e) => {
         setSuccessfulLanding(e.target.innerText.toLowerCase())
     }
-
-    React.useEffect(() => {
-        props.applyFilter(selectedYear, successfulLaunch, successfulLanding)
-    }, [selectedYear, successfulLaunch, successfulLanding])
 
     return (
         <div className={styles.filterContainer}>
@@ -33,14 +33,14 @@ export default function Filters(props) {
                 }
             </div>
             <div className={styles.filterItems}>
-            <div className={styles.filterTitle}>Successful Launch</div>
+                <div className={styles.filterTitle}>Successful Launch</div>
                 <div className={styles.filterItems}>
                     <button className={styles.filterButton} style={{ background: successfulLaunch == "true" ? '#38a02c' : '#b4ffa2' }} onClick={(e) => handleLaunchSucess(e)}>True</button>
                     <button className={styles.filterButton} style={{ background: successfulLaunch == "false" ? '#38a02c' : '#b4ffa2' }} onClick={(e) => handleLaunchSucess(e)}>False</button>
                 </div>
             </div>
             <div className={styles.filterItems}>
-            <div className={styles.filterTitle}>Successful Landing</div>
+                <div className={styles.filterTitle}>Successful Landing</div>
                 <div className={styles.filterItems}>
                     <button className={styles.filterButton} style={{ background: successfulLanding == "true" ? '#38a02c' : '#b4ffa2' }} onClick={(e) => handleLandingSucess(e)}>True</button>
                     <button className={styles.filterButton} style={{ background: successfulLanding == "false" ? '#38a02c' : '#b4ffa2' }} onClick={(e) => handleLandingSucess(e)}>False</button>

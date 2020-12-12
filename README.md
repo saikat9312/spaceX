@@ -14,11 +14,20 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can open [https://space-x-navy.vercel.app/] to see the deployed app.
 
-![SpaceX](/public//SS_desktop1.png?raw=true "Desktop View")
-![SpaceX](/public//SS_desktop2.png?raw=true "Desktop View With Filter Applied")
-![SpaceX](/public//SS_tab1.png?raw=true "Tab View")
-![SpaceX](/public//SS_mobile1.png?raw=true "Mobile View - Filter")
-![SpaceX](/public//SS_mobile2.png?raw=true "Mobile View - Card")
+## Screenshots
+
+![SpaceX](/public/SS_desktop1.png?raw=true "Desktop View")
+
+![SpaceX](/public/SS_desktop2.png?raw=true "Desktop View With Filter Applied")
+
+![SpaceX](/public/SS_tab1.png?raw=true "Tab View")
+
+![SpaceX](/public/SS_mobile1.png?raw=true "Mobile View - Filter")
+
+![SpaceX](/public/SS_mobile2.png?raw=true "Mobile View - Card")
+
+![SpaceX](/public/SS_DesktopLighthouseScore.png?raw=true "Mobile View - Card")
+
 
 ## Deploy on Vercel
 
