@@ -28,7 +28,7 @@ Run test cases along with coverage:
 npm run test:coverage
 ```
 
-# Note: Custom server is created to ease the monitoring of code change during developement, rather than build and run every time. No additional server functioanlity is added, but the future scope is there to use this custom server as per requirement.
+**Note:** Custom server is created to ease the monitoring of code change during developement, rather than build and run every time. No additional server functioanlity is added, but the future scope is there to use this custom server as per requirement.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -40,9 +40,9 @@ You can open [https://space-x-navy.vercel.app/] or [https://spacex-mock.herokuap
 3. Applied filters would change the URL and update the Page with latest records without refreshing the page ( Shallow Routing ).
 4. If the page is refreshed with the applied filters in the URL – the resulting page will be server side rendered & subsequent filters will again be client side rendered.
 5. A mobile-first design approach is implemented using modular css where,
-    - device < 700px will render 1 card per row
-    - 701px < device < 1024px will render 2 cards per row
-    - devices > 1025px will render 4 cards per row
+    - device < 701px will render 1 card per row
+    - 700px < device < 1025px will render 2 cards per row
+    - devices > 1024px will render 4 cards per row
 6. CI/CD has been implemented using [circleci](https://circleci.com/docs/2.0/deployment-integrations/#section=deployment) and integrated with heroku platform.
 7. Jest has been configured for unit testing.
 8. Additional Reset button is added to reset the state and clear localstorage. Clicking on Reset would change the URL and update the Page with all records without refreshing the page
