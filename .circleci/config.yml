@@ -28,4 +28,4 @@ workflows:
   heroku_deploy:
     jobs:
       - heroku/deploy-via-git
-      parallelism: 4
+parallelism: 4
