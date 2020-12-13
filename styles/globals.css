@@ -8,11 +8,13 @@ body {
 
 main{
   width: 100%;
+  min-height: 100vh;
   background-color: #eee;
 }
 
 ul{
   margin-bottom: 0px !important;
+  margin-top: 2px !important;
 }
 
 a {

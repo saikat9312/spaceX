@@ -16,7 +16,7 @@ export default function Layout(props) {
       </main>
 
       <footer className={styles.footer}>
-        Developed by{' '} Saikat Bhattacharya
+        Developed by{' '} <b>Saikat Bhattacharya</b>
       </footer>
     </div>
   )

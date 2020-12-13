@@ -52,6 +52,7 @@ You can open [https://space-x-navy.vercel.app/] or [https://spacex-mock.herokuap
 1. Each button click will trigger an api call along with the query stirng to get the filtered results. The page will be client side rendered.  
 2. To persist the state, localstorage has been used instead of using any additional library (Eg., Redux) to avoid unnecessary app size increase.
 3. No other 3rd party library (Eg., React-bootstarp, Antd, Material-UI) has been used for the same reason.
+4. Error handling is not implemented.
 
 ## Project Structure:
 1. index.js is the main page and only under "Page" folder under the root.
