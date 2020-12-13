@@ -60,3 +60,14 @@
     width: 80%;
   }
 }
+
+@media (min-width: 1441px){
+  .sidenavFilter{
+    width: 20%;
+    padding: 0px 15px;
+    margin: 0 0 15px 0;
+  }
+  .grid{
+    width: 80%;
+  }
+}

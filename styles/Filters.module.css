@@ -17,6 +17,20 @@
         margin: 0 16% 6%;
         font-weight: 500;
 }
+.filterTitleRow{
+    display: flex;
+    justify-content: space-between;
+}
+.resetButton{
+    color: black !important;
+    margin: 0% 2% 6% 2%;
+    padding: 1%;
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 1px #9a9a9a
+}
 .filterButton {
     color: black !important;
     margin: 0px 2.5% 3% 2.5%;
@@ -45,6 +59,20 @@
         border-bottom: 1px solid;
         margin: 0 9% 6%;
         font-weight: 500;
+    }
+    .filterTitleRow{
+        display: flex;
+        justify-content: space-between;
+    }
+    .resetButton{
+        color: black !important;
+        margin: 0% 2% 6% 2%;
+        padding: 1%;
+        border: none;
+        border-radius: 4px;
+        width: 30%;
+        cursor: pointer;
+        box-shadow: 1px 1px 3px 1px #9a9a9a
     }
     .filterButton {
         color: black !important;
@@ -75,6 +103,65 @@
         border-bottom: 1px solid;
         margin: 0 5% 6%;
         font-weight: 500;
+    }
+    .filterTitleRow{
+        display: flex;
+        justify-content: space-between;
+    }
+    .resetButton{
+        color: black !important;
+        margin: 0% 2% 6% 2%;
+        padding: 1%;
+        border: none;
+        border-radius: 4px;
+        width: 30%;
+        cursor: pointer;
+        box-shadow: 1px 1px 3px 1px #9a9a9a
+    }
+    .filterButton {
+        color: black !important;
+        margin: 0% 2.5% 7% 2.5%;
+        padding: 3%;
+        border: none;
+        border-radius: 4px;
+        width: 45%;
+        cursor: pointer;
+        box-shadow: 1px 1px 3px 1px #9a9a9a;
+    }
+}
+
+@media (min-width: 1441px) {
+    .filterContainer {
+        background: white;
+        max-width: 235px;
+        padding: 14px;
+        text-align: left;
+        color: inherit;
+        text-decoration: none;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        transition: color 0.15s ease, border-color 0.15s ease;
+        box-shadow: 4px 4px 10px 2px #9a9a9a
+    }
+    .filterTitle{
+        text-align: center; 
+        border-bottom: 1px solid;
+        margin: 0 5% 6%;
+        font-weight: 500;
+    }
+    .filterTitleRow{
+        display: flex;
+        justify-content: space-between;
+    }
+    .resetButton{
+        color: black !important;
+        margin: 0% 2% 6% 2%;
+        padding: 1%;
+        border: none;
+        border-radius: 4px;
+        width: 30%;
+        cursor: pointer;
+        box-shadow: 1px 1px 3px 1px #9a9a9a
     }
     .filterButton {
         color: black !important;

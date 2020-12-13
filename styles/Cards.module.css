@@ -91,3 +91,35 @@
         background: white;
     }
 }
+
+@media (min-width: 1441px) {
+    .card {
+        background: white;
+        width: 23%;
+        max-height: 65%;
+        margin: 0 15px 15px 0;
+        padding: 1rem;
+        text-align: left;
+        color: inherit;
+        text-decoration: none;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        transition: color 0.15s ease, border-color 0.15s ease;
+        box-shadow: 4px 4px 10px 2px #9a9a9a;
+    }
+    .img{
+        width: 100%;
+        min-width: 100%;
+        background: #eee; 
+    }
+    .title{
+        color: #0909a9
+    }
+    .cardItemContainer{
+        background: white;
+    }
+    .cardItemRow{
+        margin: 5px 0px;
+        background: white;
+    }
+}

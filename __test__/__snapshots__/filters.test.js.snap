@@ -4,9 +4,19 @@ exports[`With Snapshot Testing App shows "Filters" 1`] = `
 <div
   className="filterContainer"
 >
-  <h3>
-    Filters
-  </h3>
+  <div
+    className="filterTitleRow"
+  >
+    <h3>
+      Filters
+    </h3>
+    <button
+      className="resetButton"
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </div>
   <div
     className="filterItems"
   >
