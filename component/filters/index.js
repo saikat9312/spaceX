@@ -1,6 +1,5 @@
 import React from 'react'
 import { CONSTANT } from '../../config'
-import 'antd/dist/antd.css';
 import styles from '../../styles/Filters.module.css'
 
 export default function Filters(props) {

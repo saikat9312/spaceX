@@ -1,5 +1,4 @@
 import CardItem from '../cardItem/index'
-import 'antd/dist/antd.css';
 import styles from '../../styles/Index.module.css'
 
 export default function CardItemList(props) {
