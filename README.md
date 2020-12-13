@@ -45,6 +45,7 @@ You can open [https://space-x-navy.vercel.app/] or [https://spacex-mock.herokuap
         - devices > 1025px will render 4 cards per row
     6. CI/CD has been implemented using [circleci](https://circleci.com/docs/2.0/deployment-integrations/#section=deployment) and integrated with heroku platform.
     7. Jest has been configured for unit testing.
+    8. Additional Reset button is added to reset the state and clear localstorage. Clicking on Reset would change the URL and update the Page with all records without refreshing the page
     
 
 ## Asumptions:
